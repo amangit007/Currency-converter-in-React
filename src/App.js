@@ -23,23 +23,15 @@ function App() {
           <Route exact path="/" render={() => {
              return (
               <>
-                <Header  search={false}  unitlink='nav-link active' />
-                <Menu />
+                <Header  search={false}  currlink='nav-link active' />
+                <Currency/>
               </>
             )
           }}>
 
           </Route>
           
-          <Route exact path="/unitconversion" render={() => {
-            return (
-              <>
-                <Header  search={false}  unitlink='nav-link active' />
-                <Menu />
-              </>
-            )
-          }}>
-          </Route>
+       
 
           <Route exact path="/currency" render={() => {
             return (
@@ -52,17 +44,7 @@ function App() {
 
           </Route>
 
-          <Route exact path="/convertit/:Str" render={(props) => {
-               
-            return (
-              <>
-                <Header title='Mytodos List' search={false} unitlink='nav-link active' />
-                <Conversion {...props}/>
-              </>
-            )
-          }}>
-
-          </Route>
+        
           
 
 
