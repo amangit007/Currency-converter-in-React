@@ -8,7 +8,7 @@ import currency_names from './CurrencyNames';
 
 export default function Currency() {
 
-    const BASE_URL = 'https://v6.exchangerate-api.com/v6/cef24356452c3a6fb6702fe8/latest/INR';
+    const BASE_URL = 'https://v6.exchangerate-api.com/v6/{API KEY}/latest/INR';
 
     const [type1, settype1] = useState('INR')
     const [type2, settype2] = useState('INR')
